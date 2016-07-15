@@ -1,4 +1,4 @@
-public class Main{
+public class MergeSort{
   int[] sort(int c[]){
     if(c.length==1) {
       return c;
