@@ -1,3 +1,3 @@
 # pull
-just Algorithms
+just Algorithms.
 На вонючей джавке
