@@ -1,10 +1,10 @@
+/**
+ * Created by leha on 26.08.16.
+ */
 import java.io.*;
 import java.math.BigInteger;
 import java.util.StringTokenizer;
 
-/**
- * Created by leha on 26.08.16.
- */
 public class InReader {
     BufferedReader in;
 
