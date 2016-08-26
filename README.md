@@ -1,3 +1,3 @@
 # pull
 just Algorithms.
-На вонючей джавке
+on Java
