@@ -77,4 +77,3 @@ public class InReader {
         in.close();
     }
 }
-
