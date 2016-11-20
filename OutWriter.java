@@ -1,25 +1,15 @@
 /**
  * Created by leha on 26.08.16.
  */
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-public class OutWriter {
+class OutWriter {
     PrintWriter cout;
 
     OutWriter(String OutName) throws IOException {
-        String MyOut = "output.txt";
-        File OutF = new File(MyOut);
-        if (!OutF.exists()) {
-            if (OutName == null) {
-                cout = new PrintWriter(System.out);
-            } else {
-                cout = new PrintWriter(new FileWriter(OutName + ".out"));
-            }
-        } else {
-            cout = new PrintWriter(new FileWriter(MyOut));
-        }
+        cout = new PrintWriter(new FileWriter(OutName));
+    }
+
+    OutWriter() throws IOException {
+        cout = new PrintWriter(System.out);
     }
 
     StringBuilder out = new StringBuilder();
