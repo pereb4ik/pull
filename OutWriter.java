@@ -1,34 +1,16 @@
-/**
- * Created by leha on 26.08.16.
- */
-class OutWriter {
+class Writer {
     PrintWriter cout;
-
-    OutWriter(String OutName) throws IOException {
-        cout = new PrintWriter(new FileWriter(OutName));
-    }
-
-    OutWriter() throws IOException {
+    writer() throws IOException {
         cout = new PrintWriter(System.out);
     }
-
+    writer(String name) throws IOException {
+        cout = new PrintWriter(new FileWriter(name));
+    }
     StringBuilder out = new StringBuilder();
-
-    void print(Object a) {
+    void print(Object a){
         out.append(a);
     }
-
-    void prints(Object a) {
-        out.append(a);
-        out.append(" ");
-    }
-
-    void println(Object a) {
-        out.append(a);
-        out.append("\n");
-    }
-
-    void close() {
+    void close(){
         cout.print(out.toString());
         cout.close();
     }
