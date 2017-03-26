@@ -19,4 +19,8 @@ class Reader {
         updtokin();
         return tokin.nextToken();
     }
+    int nextInt() throws IOException {
+        updtokin();
+        return Integer.parseInt(tokin.nextToken());
+    }
 }
