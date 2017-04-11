@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    static Reader in;
-    static Writer out;
+    static Reader in = new Reader();
+    static StringBuilder out = new StringBuilder("");
 
     static class Reader {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -15,29 +15,15 @@ public class Main {
             return tokin.nextToken();
         }
     }
-
-    static class Writer {
-        StringBuilder out = new StringBuilder();
-
-        void print(Object a) {
-            out.append(a);
-        }
-
-        void close() {
-            PrintWriter cout = new PrintWriter(System.out);
-            cout.print(out.toString());
-            cout.close();
-        }
-    }
-
+    
     void slave() throws IOException {
 
     }
 
     public static void main(String args[]) throws IOException {
-        in = new Reader();
-        out = new Writer();
         new Main().slave();
-        out.close();
+        PrintWriter cout = new PrintWriter(System.out);
+        cout.print(out.toString());
+        cout.close();
     }
 }
