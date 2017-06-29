@@ -2,7 +2,7 @@ static class fWriter {
         Writer cout;
         StringBuilder s = new StringBuilder();
         fWriter() throws IOException {
-            cout = new BufferedWriter(new OutputStreamWriter(System.out));
+            cout = new OutputStreamWriter(System.out);
         }
 
         fWriter(String name) throws IOException {
