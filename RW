@@ -3,3 +3,8 @@ trueReader
 8s - updtokin();
 10s - next();
 9s - usual if()
+
+/       Writing          /
+
+fWriter 5,23s
+Writer 6,60s
