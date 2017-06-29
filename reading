@@ -1,0 +1,5 @@
+BufferedReader + FileReader 4s Inetll 3s cmd
+trueReader 
+8s - updtokin();
+10s - next();
+9s - usual if()
