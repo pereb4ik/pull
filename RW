@@ -6,5 +6,5 @@ trueReader
 
 /       Writing          /
 
-fWriter 5,23s
-Writer 6,60s
+fWriter 5,23s // System 29,30
+Writer 6,60s // System 21,26 20,36
