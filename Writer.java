@@ -1,9 +1,9 @@
 class Writer {
     PrintWriter cout;
-    writer() throws IOException {
+    Writer() throws IOException {
         cout = new PrintWriter(System.out);
     }
-    writer(String name) throws IOException {
+    Writer(String name) throws IOException {
         cout = new PrintWriter(new FileWriter(name));
     }
     StringBuilder out = new StringBuilder();
