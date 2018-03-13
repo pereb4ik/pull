@@ -1,5 +1,4 @@
 static class SegmentTree {
-
         long a[];
 
         SegmentTree(int n) {
